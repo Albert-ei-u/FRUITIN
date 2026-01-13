@@ -1,0 +1,141 @@
+/* Stats Banner Section */
+.stats-banner { 
+    background: #2d7a1f; 
+    color: white; 
+    padding: 40px 20px; 
+    display: grid; 
+    grid-template-columns: 1fr 2fr; 
+    align-items: center; 
+    gap: 30px; 
+}
+.stats-banner-left { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+.stats-banner-left img { 
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+.stats-banner h3 { 
+    font-size: 24px; 
+    margin-bottom: 15px; 
+}
+.stats-banner p { 
+    font-size: 14px; 
+    line-height: 1.6; 
+}
+.stats-banner-right { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 40px; 
+    text-align: center; 
+}
+.stat-item h2 { 
+    font-size: 50px; 
+    margin: 0 0 10px; 
+}
+.stat-item p { 
+    font-size: 16px; 
+    margin: 0; 
+}
+
+/* Why Choose Us Section */
+.choose-section { 
+    padding: 80px 20px; 
+    background: white; 
+}
+.choose-container { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    align-items: center; 
+}
+.choose-section .subtitle { 
+    color: #7cb342; 
+    font-size: 18px; 
+    margin-bottom: 10px; 
+}
+.choose-section h2 { 
+    font-size: 45px; 
+    line-height: 1.3; 
+    margin: 10px 0 20px; 
+}
+.choose-section .green { 
+    color: #7cb342; 
+}
+.choose-section .description { 
+    color: #666; 
+    line-height: 1.8; 
+    margin-bottom: 30px; 
+}
+.organic-percentage { 
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+    margin-top: 30px; 
+}
+.organic-percentage h3 { 
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}
+.organic-percentage .big-number { 
+    font-size: 70px; 
+    font-weight: bold; 
+    color: #7cb342; 
+}
+.organic-list { 
+    list-style: none; 
+    padding: 0; 
+}
+.organic-list li { 
+    padding: 8px 0; 
+    font-size: 16px; 
+}
+.organic-list li:before { 
+    content: "✓ "; 
+    color: #7cb342; 
+    font-weight: bold; 
+    margin-right: 10px; 
+}
+
+.choose-images { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choose-images .main-image { 
+    width: 450px; 
+    height: 450px; 
+    object-fit: cover; 
+    border-radius: 50%;
+    display: block;
+}
+.choose-images .small-image { 
+    position: absolute; 
+    bottom: -20px; 
+    right: 50px; 
+    width: 280px; 
+    height: 280px; 
+    object-fit: cover; 
+    border-radius: 50%;
+    border: 8px solid white; 
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .stats-banner { 
+        grid-template-columns: 1fr; 
+    }
+    .stats-banner-right { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .choose-container { 
+        grid-template-columns: 1fr; 
+    }
+}

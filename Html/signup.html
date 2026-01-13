@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Frutin Rwanda</title>
+    <link rel="stylesheet" href="../css/signup_login_style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-left">
+            <img src="../images/TheCEO.png" alt="Fresh Organic Produce">
+        </div>
+        <div class="auth-right">
+            <div class="auth-form">
+                <h1>Create Account</h1>
+                <p class="subtitle">Join us for fresh organic products</p>
+                
+                <form action="../php/signup_process.php" method="post">
+                    <label for="signup-name"><b>Full Name:</b></label>
+                    <input type="text" name="signup-name" id="signup-name" placeholder="Enter your name" required>
+                    
+                    <label for="signup-email"><b>Email Address:</b></label>
+                    <input type="email" name="signup-email" id="signup-email" placeholder="Enter your email" required>
+
+                    <label for="signup-pass"><b>Password:</b></label>
+                    <input type="password" name="signup-password" id="signup-pass" placeholder="Create a password" required>
+                    
+                    <button type="submit" class="auth-btn">Create Account</button>
+                    
+                    <div class="divider">
+                        <span>or</span>
+                    </div>
+                    
+                    <p class="switch-text">Already have an account? <a href="../Html/login.html">Login</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

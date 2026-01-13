@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Delivery Profile - Rwanda</title>
+    <link rel="stylesheet" href="css/contact_form.css">
+</head>
+<body>
+
+    <section id="contact">
+        <h2>Delivery Profile</h2>
+        <p class="contact-sub">Complete your details for fresh fruit delivery across Rwanda.</p>
+        
+        <form action="#" method="post" onsubmit="return handleFormSubmit(event)">
+            <div id="form-sect">
+                
+                <div>
+                    <label for="Name">Full Name</label>
+                    <input type="text" name="name" id="Name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="gender-container">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div>
+                    <label for="province">Province</label>
+                    <select id="province" name="province" onchange="updateDistricts()" required>
+                        <option value="">Select Province</option>
+                        <option value="Kigali">Kigali City</option>
+                        <option value="East">Eastern Province</option>
+                        <option value="West">Western Province</option>
+                        <option value="North">Northern Province</option>
+                        <option value="South">Southern Province</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="district">District</label>
+                    <select id="district" name="district" required disabled>
+                        <option value="">Select a province first</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="pnumber">Phone Number</label>
+                    <input type="tel" name="phone" id="pnumber" placeholder="e.g., 078XXXXXXX" required>
+                </div>
+
+                <div>
+                    <label for="delivery_time">Preferred Delivery Time</label>
+                    <select id="delivery_time" name="delivery_time">
+                        <option value="morning">Morning (8:00 - 12:00)</option>
+                        <option value="afternoon">Afternoon (12:00 - 17:00)</option>
+                        <option value="evening">Evening (17:00 - 20:00)</option>
+                    </select>
+                </div>
+
+                <p id="notify"></p>    
+                <button type="submit">Save Profile & Continue</button>
+            </div>    
+        </form>
+    </section>
+
+    <script>
+        const districtsByProvince = {
+            "Kigali": ["Nyarugenge", "Gasabo", "Kicukiro"],
+            "East": ["Nyagatare", "Gatsibo", "Kayonza", "Rwamagana", "Ngoma", "Kirehe", "Bugesera"],
+            "West": ["Rubavu", "Nyabihu", "Ngororero", "Karongi", "Rutsiro", "Nyamasheke", "Rusizi"],
+            "North": ["Musanze", "Burera", "Gicumbi", "Rulindo", "Gakenke"],
+            "South": ["Huye", "Nyanza", "Nyamagabe", "Gisagara", "Nyaruguru", "Ruhango", "Muhanga", "Kamonyi"]
+        };
+
+        function updateDistricts() {
+            const provinceSelect = document.getElementById('province');
+            const districtSelect = document.getElementById('district');
+            const selectedProvince = provinceSelect.value;
+
+            // Clear existing options
+            districtSelect.innerHTML = '<option value="">Select District</option>';
+
+            if (selectedProvince) {
+                districtSelect.disabled = false;
+                districtsByProvince[selectedProvince].forEach(district => {
+                    const option = document.createElement('option');
+                    option.value = district;
+                    option.textContent = district;
+                    districtSelect.appendChild(option);
+                });
+            } else {
+                districtSelect.disabled = true;
+                districtSelect.innerHTML = '<option value="">Select a province first</option>';
+            }
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const notify = document.getElementById('notify');
+            notify.textContent = "Profile saved! We will deliver to " + document.getElementById('district').value + ".";
+            notify.style.color = "#4CAF50";
+            return false;
+        }
+    </script>
+</body>
+</html>

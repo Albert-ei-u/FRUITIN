@@ -1,0 +1,129 @@
+body {
+  background-color: #cbe3c0;
+  padding: 3% 25%;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+}
+
+#contact {
+  padding: 50px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+#contact h2 {
+  margin-top: 0;
+  color: #2e4d23;
+  font-size: 28px;
+}
+
+.contact-sub {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+#form-sect div {
+  margin-bottom: 20px;
+}
+
+#form-sect label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Input, Select, and Date Styling */
+#form-sect input[type="text"],
+#form-sect input[type="tel"],
+#form-sect input[type="date"],
+#form-sect select {
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+#form-sect input:focus, 
+#form-sect select:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+#form-sect input::placeholder {
+  color: #888;
+}
+
+/* Radio Button Layout */
+.gender-container {
+  margin-bottom: 25px !important;
+}
+
+.radio-group {
+  display: flex;
+  gap: 30px;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0 !important;
+}
+
+.radio-item input[type="radio"] {
+  accent-color: #4CAF50;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.radio-item label {
+  display: inline !important;
+  font-weight: normal !important;
+  margin-bottom: 0 !important;
+  cursor: pointer;
+}
+
+/* Button Styling */
+#form-sect button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+#form-sect button:hover {
+  background: #3e8e41;
+}
+
+#notify {
+  font-weight: bold;
+  margin: 15px 0;
+  text-align: center;
+  min-height: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  body { padding: 5% 10%; }
+}
+
+@media (max-width: 600px) {
+  body { padding: 20px; }
+  #contact { padding: 30px 20px; }
+}

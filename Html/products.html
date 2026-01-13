@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fresh Fruits - Fruitin Rwanda</title>
+    <link rel="stylesheet" href="../css/fruitin_style.css">
+    <link rel="stylesheet" href="../css/products-page.css">
+</head>
+<body>
+    <!-- Original Header -->
+    <header class="header">
+        <h1 class="logo">Fruitin Rwanda</h1>
+        <nav class="nav">
+            <a href="index.html">Home+</a>
+            <a href="#about">About Us</a>
+            <a href="buy-products.html">Products+</a>
+            <a href="contactUs.html">Contact</a>
+            <a href="signup.html">signup</a>
+        </nav>
+    </header>
+
+    <!-- Fruits Hero Section -->
+    <section class="fruits-hero">
+        <div class="fruits-hero-overlay"></div>
+        <div class="fruits-hero-content">
+            <h2>Fresh Organic Fruits</h2>
+            <p>Naturally grown, hand-picked, and delivered fresh to your door</p>
+        </div>
+    </section>
+
+    <!-- Fruits Introduction -->
+    <section class="fruits-intro">
+        <div class="intro-container">
+            <div class="intro-text">
+                <span class="section-tag">Our Fruits</span>
+                <h2>Why Choose Our <span class="green">Organic Fruits?</span></h2>
+                <p>At Fruitin Rwanda, we take pride in offering the finest selection of organic fruits. Each piece is carefully selected from our certified organic farms, ensuring you receive only the best quality produce.</p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🌱</div>
+                        <h3>100% Organic</h3>
+                        <p>No pesticides or chemicals</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🍎</div>
+                        <h3>Fresh Daily</h3>
+                        <p>Harvested and delivered same day</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">⭐</div>
+                        <h3>Premium Quality</h3>
+                        <p>Hand-selected for perfection</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💚</div>
+                        <h3>Local Support</h3>
+                        <p>Supporting Rwandan farmers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-image">
+                <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=600&h=700&fit=crop" alt="Fresh Fruits">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Fruits -->
+    <section class="featured-fruits">
+        <span class="section-tag">Popular Choices</span>
+        <h2>Our Fresh <span class="green">Fruit Selection</span></h2>
+
+        <div class="fruits-catalog" id="fruitsCatalog">
+            <!-- Fruits loaded dynamically -->
+        </div>
+    </section>
+
+    <!-- Seasonal Fruits -->
+    <section class="seasonal-section">
+        <div class="seasonal-content">
+            <span class="section-tag">In Season Now</span>
+            <h2>Seasonal <span class="green">Favorites</span></h2>
+            <p>Enjoy the best fruits of the season, picked at peak ripeness for maximum flavor and nutrition.</p>
+
+            <div class="seasonal-grid">
+                <div class="seasonal-card">
+                    <img src="https://m.media-amazon.com/images/I/41EvipyAaKL._AC_UF1000,1000_QL80_.jpg" alt="Mangoes">
+                    <h3>Mangoes</h3>
+                    <span class="season-badge">Peak Season</span>
+                    <p>Sweet and juicy tropical mangoes</p>
+                </div>
+                <div class="seasonal-card">
+                    <img src="https://farmersbox.co.nz/cdn/shop/files/Hass-Avocado.jpg?v=1751339982" alt="Avocados">
+                    <h3>Avocados</h3>
+                    <span class="season-badge">Available Now</span>
+                    <p>Creamy organic avocados</p>
+                </div>
+                <div class="seasonal-card">
+                    <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?w=300&h=300&fit=crop" alt="Pineapples">
+                    <h3>Pineapples</h3>
+                    <span class="season-badge">Peak Season</span>
+                    <p>Fresh golden pineapples</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutritional Benefits -->
+    <section class="nutrition-section">
+        <h2>Health Benefits of <span class="green">Organic Fruits</span></h2>
+        
+        <div class="nutrition-grid">
+            <div class="nutrition-card">
+                <div class="nutrition-icon">💪</div>
+                <h3>Boost Immunity</h3>
+                <p>Rich in vitamins C and antioxidants that strengthen your immune system</p>
+            </div>
+            <div class="nutrition-card">
+                <div class="nutrition-icon">❤️</div>
+                <h3>Heart Health</h3>
+                <p>Natural potassium and fiber support cardiovascular wellness</p>
+            </div>
+            <div class="nutrition-card">
+                <div class="nutrition-icon">⚡</div>
+                <h3>Natural Energy</h3>
+                <p>Natural sugars provide sustained energy without crashes</p>
+            </div>
+            <div class="nutrition-card">
+                <div class="nutrition-icon">✨</div>
+                <h3>Skin Glow</h3>
+                <p>Vitamins and minerals promote healthy, radiant skin</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Grow -->
+    <section class="growing-process">
+        <div class="process-container">
+            <div class="process-image">
+                <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&h=500&fit=crop" alt="Organic Farming">
+            </div>
+            <div class="process-content">
+                <span class="section-tag">Our Process</span>
+                <h2>How We Grow Your <span class="green">Organic Fruits</span></h2>
+                
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-info">
+                            <h3>Organic Soil Preparation</h3>
+                            <p>We enrich our soil naturally with compost and organic matter</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-info">
+                            <h3>Natural Pest Control</h3>
+                            <p>Using beneficial insects and natural methods, no chemicals</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-info">
+                            <h3>Hand-Picked at Peak</h3>
+                            <p>Each fruit is carefully selected when perfectly ripe</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-info">
+                            <h3>Quick Delivery</h3>
+                            <p>From farm to your table within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews-section">
+        <span class="section-tag">What Customers Say</span>
+        <h2>Fruit Lovers <span class="green">Reviews</span></h2>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"The freshest fruits I've ever tasted! You can really taste the difference with organic produce."</p>
+                <div class="reviewer">
+                    <img src="../images/ma_sis.jpg" alt="Customer">
+                    <div>
+                        <h3>Adeline Isimbi</h3>
+                        <span>Regular Customer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"My kids love the sweet taste of these organic fruits. Great for healthy snacking!"</p>
+                <div class="reviewer">
+                    <img src="../images/Screenshot_2026-01-13 155137.png" alt="Customer">
+                    <div>
+                        <h4>Egidie Assencio</h4>
+                        <span>Family Customer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Reliable delivery and excellent quality. I recommend Fruitin Rwanda to everyone!"</p>
+                <div class="reviewer">
+                    <img src="../images/Screenshot_2026-01-13 155542.png" alt="Customer">
+                    <div>
+                        <h4>Cadiara Belyse</h4>
+                        <span>Health Enthusiast</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Experience Fresh Organic Fruits?</h2>
+            <p>Order now and get same-day delivery in Kigali</p>
+            <div class="cta-buttons">
+                <a href="#" class="cta-btn primary">Shop Fruits Now</a>
+                <a href="../Html/contactUs.html" class="cta-btn secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-sectio-->
+    <footer class="footer">
+        <div class="newsletter-section">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <div class="newsletter-icon">📨</div>
+                    <div class="newsletter-text">
+                        <h3>Sign Up to Get Updates &</h3>
+                        <h3>News About Us.</h3>
+                    </div>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email Address" class="email-input">
+                    <button class="subscribe-btn">SUBSCRIBE</button>
+                </div>
+            </div>        
+        </div>
+
+        <!--main footer content-->
+        <div class="footer-main">
+            <div class="footer-container">  
+                <div class="footer-column about-column">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🍃</span>
+                        <span class="logo-text">fruitin</span>
+                    </div>    
+                    <p class="footer-description">
+                        we provide specialized winterization services to safeguard your food during 
+                        the off-season, and when spring arrives, we handle the thorough opening process.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><img src="../images/facebook.png" alt="facebook"></a>
+                        <a href="#" class="social-icon"><img src="../images/twitter.png" alt="twitter"></a>
+                        <a href="#" class="social-icon"><img src="../images/linkedin.png" alt="linkedin"></a>
+                        <a href="#" class="social-icon"><img src="../images/instagram.png" alt="instagram"></a>
+                        <a href="#" class="social-icon"><img src="../images/icons8-youtube-50.png" alt="youtube"></a>
+                    </div>
+                </div>
+
+                <!--footer-Categories-column-->    
+                <div class="footer-column">
+                    <h4 class="footer-heading">
+                        <span class="heading-icon">🍃</span>Categories
+                    </h4>
+                    <ul class="footer-links">
+                        <li><a href="#">&rarr;Fresh Fruits</a></li>
+                        <li><a href="#">&rarr;Fruit Juice</a></li>
+                        <li><a href="#">&rarr;Vegetables</a></li>
+                        <li><a href="#">&rarr;Meat & Fish</a></li>
+                        <li><a href="#">&rarr;Organic Fish</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">
+                        <span class="heading-icon">🍃</span>Quick Links
+                    </h4>
+                    <ul class="footer-links">
+                        <li><a href="#">&rarr;About Us</a></li>
+                        <li><a href="#">&rarr;Portfolio</a></li>
+                        <li><a href="#">&rarr;Help & FAQs</a></li>
+                        <li><a href="#">&rarr;Blog</a></li>
+                        <li><a href="#">&rarr;Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">
+                        <span class="heading-icon">🍃</span>Contact US
+                    </h4>
+                    <ul class="contact-info">
+                        <li>
+                            <span class="contact-icon">📍</span>
+                            <span>kN 14, <br>Kigali Rwanda</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">📞</span>
+                            <span>+(250)-79938-3261 <br>+(250)-79933-4500</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">✉️</span>
+                            <span>help24/7@fruitin.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <p class="copyright">
+                    copyright &copy; 2025 <span class="brand-name">Fruitin.</span> All Rights Reserved.
+                </p>
+                <div class="payment-methods">
+                    <img src="../images/paypal.png" alt="Paypal">
+                    <img src="../images/logo.png" alt="masterCard">
+                    <img src="../images/visa.png" alt="visa">
+                    <img src="../images/american-express.png" alt="American Express">
+                    <img src="../images/discover.png" alt="Discover">
+                </div>
+            </div>
+            <button class="scroll-top">⬆</button>
+        </div>
+    </footer>
+
+    <script src="../Js/products.js"></script>
+</body>
+</html>
