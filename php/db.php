@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$pass = "Uwumuremyi2009!"; 
+$pass = "<mypass>"; 
 $dbname = "fruitin_rwanda";
 $port = 3306;
 
